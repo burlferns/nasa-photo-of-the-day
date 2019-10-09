@@ -10,23 +10,32 @@ function App() {
     axios
       .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
       .then(response => {
-        console.log("This is response:", response);
-        setNasaData(response);
-        console.log("This is nasaData in axios command:", nasaData);
+        // console.log("This is response:", response);
+        setNasaData(response.data);
+        // console.log("This is nasaData in axios command:", nasaData);
       })
       .catch(error => {
         console.log("The data was not returned",error);
       });
   },[]);
 
-  let dataL=nasaData.data;
-  console.log("The dataL is ",dataL);
-  // let imgUrl=dataL.hdurl;
-  // console.log("The imgUrl is ",imgUrl);
+  // console.log("This is nasaData outside the axios command:", nasaData);
 
+  if(nasaData!=={}) {
+    let imgUrl = nasaData.hdurl;
+    let title = nasaData.title;
+    let explanation = nasaData.explanation;
 
-  return <h3>Loading from if ...</h3>;
+    return (
+      <div className="App">
+        <Apod imgUrl={imgUrl} title={title} explanation={explanation} />
+      </div>
+    );
+  } else {
+    return <h3>Loading...</h3>;
+  }
 
+  // return <h3>Loading...</h3>;
   
 
 }

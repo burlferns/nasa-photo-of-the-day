@@ -5,7 +5,7 @@ export default function Apod({imgUrl,title,explanation})  {
         <div className="apod-card">
             <h1>Nasa's Astronomy Picture of the day</h1>
             <img alt="Nasa's astronomy picture" src={imgUrl} />
-            <h2>`Title of picture: ${title}`</h2>
+            <h2>{title}</h2>
             <p>{explanation}</p>
         </div>
         
