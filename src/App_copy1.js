@@ -33,20 +33,20 @@ function App() {
 
   
   if(picToday.title && picDay.title) {
-    let imgUrlT = picToday.hdurl;
-    let titleT = picToday.title;
-    let explainT = picToday.explanation;
+    // let imgUrlT = picToday.hdurl;
+    // let titleT = picToday.title;
+    // let explainT = picToday.explanation;
 
-    let imgUrlD = picDay.hdurl;
-    let titleD = picDay.title;
-    let explainD = picDay.explanation;
-    let day = "Yesterday";
+    // let imgUrlD = picDay.hdurl;
+    // let titleD = picDay.title;
+    // let explainD = picDay.explanation;
+    // let day = "2019-10-09";
 
     return (
       <div className="App">
-        <ApodList imgUrlT={imgUrlT} titleT={titleT} explainT={explainT} imgUrlD={imgUrlD} titleD={titleD} explainD={explainD} day={day} />
+        {/* <ApodList imgUrlT={imgUrlT} titleT={titleT} explainT={explainT} imgUrlD={imgUrlD} titleD={titleD} explainD={explainD} day={day} /> */}
 
-        
+        <ApodList />
 
       </div>
     );

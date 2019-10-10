@@ -1,0 +1,35 @@
+To get axios to work I had to do two things:
+1) *******************************************************
+I had to run "yarn add axios" in the terminal. I did this after I switched to burl-fernandes branch
+
+2) *******************************************************
+Have to add "import axios from "axios";" to the JavaScript file where I am going to execute the axios command
+
+3) ******************************************************* 
+Added the following axios command in the JavaScript file to get the data:
+
+axios
+    .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.log("The data was not returned",error);
+    });
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To get reactstrap I did:
+"yarn add reactstrap"
+
+To get bootstrap I did:
+"yarn add bootstrap"
+
+FOR BOOTSTRAP, REMEMBER TO ADD THE FOLLOWING IN THE index'js FILE:
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+To get styled-components I did:
+"yarn add styled-components"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
