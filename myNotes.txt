@@ -18,3 +18,18 @@ axios
     });
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To get reactstrap I did:
+"yarn add reactstrap"
+
+To get bootstrap I did:
+"yarn add bootstrap"
+
+FOR BOOTSTRAP, REMEMBER TO ADD THE FOLLOWING IN THE index'js FILE:
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+To get styled-components I did:
+"yarn add styled-components"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
